@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RADICALMART_VIEW_PRODUCT" option="bs5">
+		<message>
+			<![CDATA[COM_RADICALMART_VIEW_PRODUCT_DESCRIPTION]]>
+		</message>
+	</layout>
+	<fields name="request" addfieldpath="/administrator/components/com_radicalmart/models/fields">
+		<fieldset name="request">
+			<field name="id" type="products"
+				   label="COM_RADICALMART_PRODUCT"
+				   required="true">
+			</field>
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="metadata" label="COM_RADICALMART_SEO">
+			<field type="shortcodes" sections="product,global"/>
+			<field name="seo_product_title" type="text"
+				   label="COM_RADICALMART_SEO_TITLE"
+				   class="input-xlarge"/>
+			<field name="seo_product_description" type="textarea"
+				   label="COM_RADICALMART_SEO_DESCRIPTION"
+				   rows="3"
+				   cols="30"
+				   class="input-xlarge"/>
+			<field name="seo_product_image" type="media"
+				   label="COM_RADICALMART_SEO_IMAGE"/>
+			<field name="seo_product_robots" type="list"
+				   label="COM_RADICALMART_SEO_ROBOTS"
+				   class="input-xlarge">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+				<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+				<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+				<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+			</field>
+			<field name="seo_product_h1" type="text"
+				   label="COM_RADICALMART_SEO_H1"
+				   class="input-xlarge"/>
+		</fieldset>
+		<field name="page_title" type="hidden"/>
+		<field name="show_page_heading" type="hidden"/>
+		<field name="page_heading" type="hidden"/>
+		<field name="menu-meta_description" type="hidden"/>
+		<field name="menu-meta_keywords" type="hidden"/>
+		<field name="robots" type="hidden"/>
+		<field name="secure" type="hidden"/>
+	</fields>
+</metadata>
